@@ -1,0 +1,285 @@
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحة المهارات والخبرات</title>
+    
+</head>
+<body>
+
+    <header>
+        <h1 class="title">المهارات والخبرات</h1>
+       
+    </header>
+
+    <section id="skills">
+        <h2>المهارات</h2>
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">speak english</div>
+        <div class="skill">good drawing</div>
+        <div class="skill">good speskar</div>
+    </section>
+
+    <section id="experience">
+        <h2>الخبرات</h2>
+        <div class="experience">
+            <h3>work with phtoshop <span>Ps</span></h3>
+            <p>works with it 2 years</p>
+        </div>
+        <div class="experience">
+            <h3>work with Illustrtor <span id="ttt">Ai</span> </h3>
+            <p>with it for 2 years</p>
+        </div>
+    </section>
+
+    <a href="index.html" class="btn">Came Back</a>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+ 
+}
+
+body {
+    background-color: #c39eb1;
+    color: #333;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+header {
+    
+     text-align: center;
+    margin-bottom: 30px;
+     /* border: 2px solid #efbcbc;
+    border-radius: 5px;  */
+    
+    /* background-color: antiquewhite; */
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+    
+}
+
+header h1 {
+    font-size: 2em;
+    color: #7e2121;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+
+#skills, #experience {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px 0;
+    padding: 20px;
+    background: #efbcbc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(49, 27, 27, 0.1);
+    animation: fadeInUp 1s ease-in-out;
+}
+
+#skills h2, #experience h2 {
+    font-size: 1.5em;
+    color: brown;
+    margin-bottom: 10px;
+    animation: fadeInLeft 1s ease-in-out;
+}
+
+.skill {
+    background-color: #c48282;
+    color: #ffff;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    transition: transform 0.3s;
+    animation: fadeInRight 0.7s ease-in-out;
+}
+
+.skill:hover {
+    transform: scale(1.1);
+    color: brown;
+}
+
+
+.experience {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-left: 3px solid #ea1265;
+    animation: fadeInRight 0.7s ease-in-out;
+}
+
+.experience h3 {
+    color: #5d0a27;
+    font-size: 1.2em;
+}
+
+.experience p {
+    color: #170d0f;
+}
+.experience h3 span{
+    color: rgb(22, 133, 229);
+}
+#ttt{
+    color: rgb(242, 158, 32);
+}
+a{
+    text-decoration: none;
+    color: #ffff;
+    background-color: brown;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.1em;
+ border-radius: 5px;
+    
+}
+a.btn:hover{
+    background-color: antiquewhite;
+   
+    border-radius: 5px;
+    transition: transform 0.3s;
+    animation: fadeInRight 0.7s ease-in-out;
+}
+
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInLeft {
+    from { opacity: 0; transform: translateX(-20px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeInRight {
+    from { opacity: 0; transform: translateX(20px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+</style>
+
+
+ <!-- قسم المهارات -->
+ <section  class="moreDa-gallery">
+    <h2>MORE DATE ILS</h2>
+    <div class="moreDa-item">
+        <img src="images/فكتوري.jpg" alt="الوان">
+        <h3>رسم فكتوري</h3>
+        <p>نسبه المهاره: 95% ريال</p>
+        <button onclick="showDetails(this)">عرض التفاصيل</button>
+        <p class="details hidden">      رسومات مستوحها من الرسومات الفكتوريه القديم.</p>
+    </div>
+    <div class="moreDa-item">
+        <img src="images/سندرلا.jpg" alt="الوان">
+        <h3>رسم كرتون</h3>
+        <p>نسبه المهاره: %97</p>
+        <button onclick="showDetails(this)">عرض التفاصيل</button>
+        <p class="details hidden">    رسم جميع رسومات الكرتون والانمي.</p>
+    </div>
+    <div class="moreDa-item">
+        <img src="images/الالوان.jpg" alt="الوان">
+        <h3>رسم معبر</h3>
+        <p>نسبه المهاره: 98% ريال</p>
+        <button onclick="showDetails(this)">عرض التفاصيل</button>
+        <p class="details hidden">   رسومات تعبيريه بطرق حديثه.</p>
+    </div>
+</section>
+
+<script>
+    function showDetails(button) {
+        const details = button.nextElementSibling;
+        details.classList.toggle("hidden");
+    }
+</script>
+<style>
+ 
+.moreDa-gallery {
+padding: 40px 20px;
+text-align: center;
+background-color: #fff;
+margin-bottom: 15px;
+    padding: 10px;
+    border-left: 3px solid #ea1265;
+    animation: fadeInRight 0.7s ease-in-out;
+}
+
+
+.moreDa-gallery h2 {
+font-size: 28px;
+margin-bottom: 20px;
+}
+
+.moreDa-item {
+display: inline-block;
+width: 200px;
+text-align: center;
+background-color: #dcbebe;
+margin: 10px;
+padding: 15px;
+border-radius: 8px;
+box-shadow: 0 4px 8px rgba(242, 238, 238, 0.2);
+}
+
+.moreDa-item img {
+width: 100%;
+border-radius: 8px;
+}
+
+.moreDa-item h3 {
+font-size: 20px;
+margin-top: 10px;
+}
+
+.moreDa-item p {
+font-size: 16px;
+margin-top: 5px;
+}
+
+.moreDa-item button {
+padding: 8px;
+margin-top: 10px;
+background-color: #28a745;
+color: #fff;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+transition: background-color 0.3s;
+}
+
+.moreDa-item button:hover {
+background-color: #218838;
+}
+
+.details {
+margin-top: 10px;
+font-size: 14px;
+color: #333;
+}
+
+.hidden {
+display: none;}
+
+
+</style>
+
+
+
+</body>
+</html>
